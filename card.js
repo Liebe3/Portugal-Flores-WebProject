@@ -28,4 +28,18 @@ const createMovieCard = (movie) => {
 
   };
 
+// Usage example:
+// function displayDefaultMovie() {
+//   const defaultMovieData = {
+//     Year: '2023',
+//     Poster: 'https://example.com/movie-poster.jpg',
+//     Type: 'Action',
+//     Title: 'Sample Movie',
+//   };
 
+//   const defaultMovieCardElement = createMovieCard(defaultMovieData);
+//   movieContainer.appendChild(defaultMovieCardElement);
+// }
+
+// // Call the function to display the default movie card when the page loads
+// window.addEventListener('load', displayDefaultMovie);
