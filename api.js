@@ -6,14 +6,11 @@ const searchButton = document.getElementById("searchButton");
 const errorDiv = document.getElementById("error");
 const movieContainer = document.getElementById("movieContainer");
 
-searchButton.addEventListener("click", handleSearch);
-
-searchInput.addEventListener("keypress", function (e) {
-  if (e.key === "Enter") {
-    const searchTerm = searchInput.value.trim();
-    handleSearch(searchTerm);
-  }
+searchButton.addEventListener("click", function () {
+  const searchTerm = searchInput.value.trim();
+  handleSearch(searchTerm);
 });
+
 
 function handleSearch(searchTerm) {
   if (searchTerm) {
